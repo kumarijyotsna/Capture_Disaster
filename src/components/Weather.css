@@ -1,0 +1,38 @@
+.map1 {
+	position: relative;
+	margin-top: 10px;
+	height: 1000px;
+	width: 100%;
+	
+	float: left;
+}
+ul.list1 li.listPart1{
+	display:inline-block;
+}
+
+.listPart1 {
+	background-color: #b6b4a91a;
+	margin-right: 20px;
+	width: 241px;
+	height: 147px;
+	margin-bottom: 20px;
+	text-align: center;
+	transition: 0.3s;
+	box-shadow: 0 20px 20px 0 #84848c;
+	border-radius: 24px 24px 24px 24px;
+	font-weight: 401;
+}
+
+.listPart1:hover{
+	box-shadow: 0 8px 16px 0 black;
+}
+
+.heading1{
+	background-color: #13a753;
+	color: white;
+	width: 163px;
+	height: 30px;
+	margin-top:20px;
+	padding-top:15px;
+	font-weight: 700;
+}
