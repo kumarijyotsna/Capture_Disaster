@@ -5,7 +5,7 @@ import Geocode from "react-geocode";
 import axios from 'axios';
 import './Weather.css';
 /*connecting to geocode*/
-Geocode.setApiKey("AIzaSyAef5QTmsK376KK-53594VgCfHKn6nE71k");
+Geocode.setApiKey("API_KEY");
  
 // Enable or disable logs. Its optional.
 Geocode.enableDebug();
@@ -117,7 +117,7 @@ fetchData() {
             <div className="map1">
         
                 <Map
-                    googleMapURL="http://maps.googleapis.com/maps/api/js?key=AIzaSyAef5QTmsK376KK-53594VgCfHKn6nE71k"
+                    googleMapURL="http://maps.googleapis.com/maps/api/js?key=API_KEY"
                     loadingElement={<div style={{ height: `100%` }} />}
                     containerElement={<div style={{ height: `400px` }} />}
                     mapElement={<div style={{ height: `100%` }} />}
