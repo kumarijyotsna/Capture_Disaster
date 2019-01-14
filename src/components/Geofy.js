@@ -5,6 +5,7 @@ import Geocode from "react-geocode";
 import './Geofy.css';
 import axios from 'axios';
 import Axios from "axios";
+import Chat from "./Chat.js";
 /*enabling key for geocode api*/
 Geocode.setApiKey("AIzaSyAef5QTmsK376KK-53594VgCfHKn6nE71k");
  
@@ -157,7 +158,14 @@ class Geofy extends Component {
 	}
 	}
 	
-
+	myFunction=()=> {
+  var x = document.getElementById("chatbox");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
     componentWillMount(){
 		//console.log("will mount")
 		this.showCurrentLocation();
@@ -198,6 +206,7 @@ class Geofy extends Component {
 		    lngc={lngc}
 		/>
 		</div>
+
 		<hr/>
 		<div>
 			<ul className="list">
@@ -209,6 +218,8 @@ class Geofy extends Component {
 			)}
 			</ul>
 		</div>
+		<div className="button1" style={{"background-color":"#13a753"}}><button onClick={this.myFunction}>OPEN CHATBOX</button></div>
+          <div className="chatbox fadeIn" id="chatbox">  <Chat/> </div>
         </div>
         );
     }

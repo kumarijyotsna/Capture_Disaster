@@ -74,3 +74,19 @@ ul.list li.listPart{
 	padding-top:15px;
 	font-weight: 700;
 }
+.button1{
+	position:fixed;
+	top:719px;
+	left:1380px;
+	z-index:2;
+	background:#13a753;
+}
+.chatbox{
+	position:fixed;
+	top:30px;
+	
+	left:1200px;
+	display:none;
+	
+}
+
