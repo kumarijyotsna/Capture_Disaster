@@ -7,7 +7,7 @@ import axios from 'axios';
 import Axios from "axios";
 import Chat from "./Chat.js";
 /*enabling key for geocode api*/
-Geocode.setApiKey("AIzaSyAef5QTmsK376KK-53594VgCfHKn6nE71k");
+Geocode.setApiKey("API_KEY");
  
 // Enable or disable logs. Its optional.
 Geocode.enableDebug();
@@ -194,7 +194,7 @@ class Geofy extends Component {
 		<div className="map"> 
 		               
 		<Mapl
-            googleMapURL="http://maps.googleapis.com/maps/api/js?key=AIzaSyAef5QTmsK376KK-53594VgCfHKn6nE71k"
+            googleMapURL="http://maps.googleapis.com/maps/api/js?key=API_KEY"
             loadingElement={<div style={{ height: `100%` }} />}
             containerElement={<div style={{ height: `100%` }} />}
             mapElement={<div style={{ height: `100%` }} />}
